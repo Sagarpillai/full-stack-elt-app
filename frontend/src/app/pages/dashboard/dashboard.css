@@ -1,0 +1,31 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+button {
+  background-color: var(--dark-teal);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: var(--light-teal);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.status-box {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}

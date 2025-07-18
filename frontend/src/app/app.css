@@ -1,0 +1,34 @@
+.header {
+  /* Use our new soft-black variable */
+  background-color: var(--soft-black);
+  color: var(--white);
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  /* Use our new light-teal for hover */
+  background-color: var(--light-teal);
+}
+
+.active-link {
+  /* Use our new dark-teal for the active link */
+  background-color: var(--dark-teal);
+}

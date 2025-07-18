@@ -1,0 +1,7 @@
+psycopg2-binary
+PyYAML
+pandas
+sqlalchemy
+Flask
+Flask-Cors
+gunicorn

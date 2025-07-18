@@ -1,0 +1,28 @@
+<h2>Job History</h2>
+
+<p *ngIf="isLoading">Loading history...</p>
+
+<table *ngIf="!isLoading && jobHistory.length > 0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>File Name</th>
+      <th>Status</th>
+      <th>Timestamp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let job of jobHistory">
+      <td>{{ job.id }}</td>
+      <td>
+        <a [routerLink]="['/view', job.file_name.replace('.csv', '')]">{{ job.file_name }}</a>
+      </td>
+      <td>{{ job.status }}</td>
+      <td>{{ job.timestamp | date:'medium' }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="!isLoading && jobHistory.length === 0">
+  <p>No job history found.</p>
+</div>
